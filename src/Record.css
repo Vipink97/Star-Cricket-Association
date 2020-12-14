@@ -1,0 +1,163 @@
+.record {
+  width: 80%;
+  height: auto;
+  margin: 20px 0;
+  padding: 10px 20px;
+  border: 1px solid rgb(168, 167, 167);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.record__heading {
+  width: 100%;
+  margin: 10px 0;
+  margin-bottom: 20px;
+}
+
+.record__heading > h1 {
+  font-size: xx-large;
+  letter-spacing: 8px;
+  padding: 1px 8px;
+  background-color: #0D59CA;
+  color: white;
+  box-shadow: -1px 2px 4px black;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.record__container {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: -1px 2px 4px rgb(165, 155, 155);
+}
+
+.recordTable__container {
+  width: 100%;
+  overflow-x: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.record__table{
+  white-space: nowrap;
+}
+
+
+.record__container::-webkit-scrollbar {
+  display: none;
+}
+
+.record__container > h1 {
+  width: auto;
+  font-family: "Courier New", Courier, monospace;
+  font-size: x-large;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 10px 10px;
+  background-color: orange;
+  width: 95%;
+  text-align: center;
+  color: white;
+  padding: 4px 0;
+  border-radius: 4px;
+  /* box-shadow: 1px 1px inset 4px black; */
+}
+
+.table__heading{
+  background-color: rgb(183, 139, 224);
+  color: rgb(47, 7, 85);
+  border-radius: 4px;
+}
+
+.tableRow__even{
+background-color: rgb(236, 172, 236);
+}
+
+.tableRow__odd{
+background-color: rgb(231, 199, 231);
+}
+
+.team__trophies {
+  width: 90%;
+  display: flex;
+  margin-bottom: 35px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.trophies__container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(230, 212, 230);
+  border-radius: 4px;
+  justify-content: space-evenly;
+}
+
+.trophy__Info {
+  width: 150px;
+  height: 200px;
+  min-width: 110px;
+  margin: 10px 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  /* text-align: center; */
+  border: 1px solid rgb(172, 169, 169);
+  background-color: white;
+  box-shadow: 2px 2px 4px gray;
+}
+
+.trophy__Info > img {
+  width: 100px;
+  height: auto;
+}
+
+.trophy__Info > p {
+  font-weight: 700;
+}
+
+.teamTrophy__teamName{
+  width: 100%;
+  background-color: rgb(167, 109, 221);
+  color: rgb(47, 7, 85);
+  padding:4px 8px;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 600px) {
+  .recordTable__container {
+    padding-left: 15rem;
+    box-sizing: border-box;
+  }
+  .record__heading > h1 {
+    font-size: larger;
+    text-align: center;
+    letter-spacing: 6px;
+    /* font-weight: 900; */
+  }
+  .record__container > h1 {
+    font-size: medium;
+  }
+  .record {
+    width: 100%;
+    margin: 0;
+    padding: 0 6px;
+    box-sizing: border-box;
+    border: none;
+  }
+  .team__trophies > h2 {
+    font-size: larger;
+    /* background-color: cornflowerblue; */
+  }
+}

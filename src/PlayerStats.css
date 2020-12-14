@@ -1,0 +1,210 @@
+.playerstats {
+  width: 80%;
+  height: auto;
+  margin: 25px;
+  background-image: linear-gradient(to top, blue, white);
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 4px 5px black;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.player__personalInfoContainer {
+  width: 100%;
+  height: 30%;
+  display: flex;
+}
+
+.player__profilePic {
+  width: 50%;
+  margin: 10px;
+  display: flex;
+  margin-left: 80px;
+}
+
+.player__profilePic img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+}
+
+.player__profilePic > div {
+  padding: 20px;
+}
+
+.player__profilePic img:hover {
+  transition: all 1s ease-in-out;
+  transform: scale(1.3);
+}
+
+.player__personnelInfo {
+  width: 50%;
+  margin: 10px;
+  padding: 0 10px;
+  background-color:white;
+  border-radius: 8px;
+  box-shadow: 2px 4px 5px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.player__personnelInfo > h1 {
+  margin: 10px;
+  margin-bottom: 0;
+}
+
+.player__personnelInfo > div {
+  margin: 10px;
+  margin-top: 0;
+  display: flex;
+}
+
+.player__personnelInfo > div > div {
+  margin-right: 10%;
+}
+
+.player__ranking {
+  margin: 10px;
+  padding: 0 10px;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 2px 4px 5px black;
+  display: flex;
+  flex-direction: column;
+}
+
+.playerRanking__container > div {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 4px;
+}
+
+.player__battingPerformance, 
+.player__bowlingPerformance {
+  margin: 10px;
+  padding: 0 10px;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 2px 4px 5px black;
+}
+
+.player__battingPerformance > div,
+.player__bowlingPerformance > div {
+  display: flex;
+  height: auto;
+  margin: 5px 20px;
+  width: 100%;
+}
+
+.player__battingPerformance > div > div,
+.player__bowlingPerformance > div > div {
+  display: flex;
+  width: 40%;
+  margin-right: 10%;
+  justify-content: space-around;
+}
+
+.player__battingPerformance > div > div > div > h4,
+.player__bowlingPerformance > div > div > div > h4 {
+  margin: 15px 0;
+}
+
+@media screen and (max-width: 600px) {
+  .playerstats {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    background-image: linear-gradient(to top, blue, white);
+    box-shadow: none;
+    font-family: "Courier New", Courier, monospace;
+  }
+  .player__personalInfoContainer {
+    height: 100%;
+    flex-direction: column;
+  }
+
+  .player__profilePic {
+    width: auto;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .player__personnelInfo {
+    width: auto;
+    padding: 0 4px;
+  }
+
+  .player__personnelInfo > div > h1 {
+    margin: 8px;
+    font-size: x-large;
+  }
+
+  .player__personnelInfo > div >div{
+    margin: auto;
+  }
+
+  .player__personnelInfo > div >div> h4 {
+    margin: 8px;
+    font-size: small;
+  }
+
+  .player__ranking {
+    padding: 2px 5px;
+  }
+
+  .player__ranking > h2 {
+    font-size: larger;
+  }
+
+  .playerRanking__container > div > h3 {
+    font-size: medium;
+    font-weight: 700;
+  }
+
+  .playerRanking__container > div > h2 {
+    font-size: medium;
+    font-weight: 700;
+  }
+
+  .player__battingPerformance,
+  .player__bowlingPerformance {
+    padding: 2px 5px;
+  }
+
+  .player__battingPerformance > h2,
+  .player__bowlingPerformance > h2 {
+    font-size: larger;
+  }
+
+  .player__battingPerformance > div,
+  .player__bowlingPerformance > div  {
+    flex-direction: column;
+    margin: 5px 10px;
+    align-items: center;
+  }
+
+  .player__battingPerformance > div > div,
+  .player__bowlingPerformance > div > div {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .player__battingPerformance > div > div > div,
+  .player__bowlingPerformance > div > div > div {
+    width: 70px;
+  }
+
+  .player__battingPerformance > div > div > div:nth-child(1),
+  .player__bowlingPerformance > div > div > div:nth-child(1)  {
+    width: 130px;
+  }
+
+  .player__battingPerformance > div > div >div>h4,
+  .player__bowlingPerformance > div > div >div>h4 {
+    margin: 5px 0px;
+    font-size: small;
+  }
+
+}

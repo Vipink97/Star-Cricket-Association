@@ -1,0 +1,213 @@
+<div className="matchDetails__container">
+          <div>
+            <label htmlFor="matchCode">Match Code :</label>
+            <span className="error__message">
+              <Field name="matchCode" type="text" />
+              <ErrorMessage name="matchCode" />
+            </span>
+          </div>
+          <div>
+            <label htmlFor="match">Match :</label>
+            <span className="error__message">
+              <Field name="match" type="text" />
+              <ErrorMessage name="match" />
+            </span>
+          </div>
+          <div>
+            <label htmlFor="ground">Ground Name :</label>
+            <span className="error__message">
+              <Field name="ground" type="text" />
+              <ErrorMessage name="ground" />
+            </span>
+          </div>
+          <div>
+            <label htmlFor="winner">Winner :</label>
+            <span className="error__message">
+              <Field name="winner" type="text" />
+              <ErrorMessage name="winner" />
+            </span>
+          </div>
+          <div>
+            <label htmlFor="margin">Margin :</label>
+            <span className="error__message">
+              <Field name="margin" type="text" />
+              <ErrorMessage name="margin" />
+            </span>
+          </div>
+          <div>
+            <label htmlFor="manOfTheMatch">Man Of The Match :</label>
+            <span className="error__message">
+              <Field name="manOfTheMatch" type="text" />
+              <ErrorMessage name="manOfTheMatch" />
+            </span>
+          </div>
+        </div>
+
+        <div className="teamDetails__container">
+          <label htmlFor="teamA">Team A</label>
+          <div className="teamName__container">
+            <label htmlFor="teamA.teamName">Team Name :</label>
+            <span className="error__message">
+              <Field name="teamA.teamName" type="text" />
+              <ErrorMessage name="teamA.teamName" />
+            </span>
+          </div>
+          <div className="battingDetails__container">
+            <label htmlFor="teamA.batting">Batting</label>
+            <div>
+              <label htmlFor="teamA.batting.totalRuns">Total Runs :</label>
+              <span className="error__message">
+                <Field name="teamA.batting.totalRuns" type="number" />
+                <ErrorMessage name="teamA.batting.totalRuns" />
+              </span>
+            </div>
+            <div>
+              <label htmlFor="teamA.batting.overs">Overs :</label>
+              <span className="error__message">
+                <Field name="teamA.batting.overs" type="number" />
+                <ErrorMessage name="teamA.batting.overs" />
+              </span>
+            </div>
+            <div>
+              <label htmlFor="teamA.batting.wicketsFall">Wickets Fall :</label>
+              <span className="error__message">
+                <Field
+                  name="teamA.batting.wicketsFall"
+                  type="number"
+                  max="10"
+                  min="0"
+                />
+                <ErrorMessage name="teamA.batting.wicketsFall" />
+              </span>
+            </div>
+            <div>
+              <label htmlFor="teamA.batting.extras">Extras :</label>
+              <span className="error__message">
+                <Field name="teamA.batting.extras" type="number" />
+                <ErrorMessage name="teamA.batting.extras" />
+              </span>
+            </div>
+            <div>
+              <label htmlFor="teamA.batting.extrasType">Extras Type :</label>
+              <span className="error__message">
+                <Field name="teamA.batting.extrasType" type="text" />
+                <ErrorMessage name="teamA.batting.extrasType" />
+              </span>
+            </div>
+            <div>
+              <label htmlFor="teamA.batting.players[0]">Players :</label>
+            </div>
+            <div>
+              <label htmlFor="teamA.batting.players[0].playerName">
+                Player Name :
+              </label>
+              <span className="error__message">
+                <Field name="teamA.batting.players[0].playerName" type="text" />
+                <ErrorMessage name="teamA.batting.players[0].playerName" />
+              </span>
+            </div>
+            <div>
+              <label htmlFor="teamA.batting.players[0].runs">Runs :</label>
+              <span className="error__message">
+                <Field name="teamA.batting.players[0].runs" type="number" />
+                <ErrorMessage name="teamA.batting.players[0].runs" />
+              </span>
+            </div>
+            <div>
+              <label htmlFor="teamA.batting.players[0].balls">Balls :</label>
+              <span className="error__message">
+                <Field name="teamA.batting.players[0].balls" type="number" />
+                <ErrorMessage name="teamA.batting.players[0].balls" />
+              </span>
+            </div>
+            <div>
+              <label htmlFor="teamA.batting.players[0].fours">4's :</label>
+              <span className="error__message">
+                <Field name="teamA.batting.players[0].fours" type="number" />
+                <ErrorMessage name="teamA.batting.players[0].fours" />
+              </span>
+            </div>
+            <div>
+              <label htmlFor="teamA.batting.players[0].sixes">6's :</label>
+              <span className="error__message">
+                <Field name="teamA.batting.players[0].sixes" type="number" />
+                <ErrorMessage name="teamA.batting.players[0].sixes" />
+              </span>
+            </div>
+            <div>
+              <label htmlFor="teamA.batting.players[0].strikeRate">
+                Strike Rate :
+              </label>
+              <span className="error__message">
+                <Field
+                  name="teamA.batting.players[0].strikeRate"
+                  type="number"
+                />
+                <ErrorMessage name="teamA.batting.players[0].strikeRate" />
+              </span>
+            </div>
+            <div>
+              <label htmlFor="teamA.batting.players[0].outReason">
+                Out Reason :
+              </label>
+              <span className="error__message">
+                <Field name="teamA.batting.players[0].outReason" type="text" />
+                <ErrorMessage name="teamA.batting.players[0].outReason" />
+              </span>
+            </div>
+          </div>
+
+          <div className="bowlingDetails__container">
+            <label htmlFor="teamA.bowling">Bowling :</label>
+            <div>
+              <label htmlFor="teamA.bowling.players[0].playerName">
+                Player Name :
+              </label>
+              <span className="error__message">
+                <Field name="teamA.bowling.players[0].playerName" type="text" />
+                <ErrorMessage name="teamA.bowling.players[0].playerName" />
+              </span>
+            </div>
+            <div>
+              <label htmlFor="teamA.bowling.players[0].overs">Overs :</label>
+              <span className="error__message">
+                <Field name="teamA.bowling.players[0].overs" type="number" />
+                <ErrorMessage name="teamA.bowling.players[0].overs" />
+              </span>
+            </div>
+            <div>
+              <label htmlFor="teamA.bowling.players[0].maidens">
+                Maidens :
+              </label>
+              <span className="error__message">
+                <Field name="teamA.bowling.players[0].maidens" type="number" />
+                <ErrorMessage name="teamA.bowling.players[0].maidens" />
+              </span>
+            </div>
+            <div>
+              <label htmlFor="teamA.bowling.players[0].runs">Runs :</label>
+              <span className="error__message">
+                <Field name="teamA.bowling.players[0].runs" type="number" />
+                <ErrorMessage name="teamA.bowling.players[0].runs" />
+              </span>
+            </div>
+            <div>
+              <label htmlFor="teamA.bowling.players[0].wickets">
+                Wickets :
+              </label>
+              <span className="error__message">
+                <Field name="teamA.bowling.players[0].wickets" type="number" />
+                <ErrorMessage name="teamA.bowling.players[0].wickets" />
+              </span>
+            </div>
+            <div>
+              <label htmlFor="teamA.bowling.players[0].economy">
+                Economy :
+              </label>
+              <span className="error__message">
+                <Field name="teamA.bowling.players[0].economy" type="number" />
+                <ErrorMessage name="teamA.bowling.players[0].economy" />
+              </span>
+            </div>
+          </div>
+        </div>

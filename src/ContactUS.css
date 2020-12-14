@@ -1,0 +1,85 @@
+.contactUs {
+  width: 100%;
+  height: calc(100vh - 50px);
+  background-color: #051e34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+.contactUs__main {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.contactUs__heading {
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.contactUs__details > h2 {
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.contactUs__details > p {
+  width: 250px;
+  margin-bottom: 15px;
+  display: flex;
+}
+
+.contactUs__details > p > a {
+  text-decoration: none;
+}
+
+.contactUs__details > p > a:link {
+  color: #256092;
+}
+
+.MuiSvgIcon-root {
+  margin-right: 6px;
+}
+
+.contactUs__form {
+}
+
+@media screen and (max-width: 600px) {
+  .contactUs {
+  }
+
+  .contactUs__main {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contactUs__heading {
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+
+  .contactUs__details {
+    margin-top: 40px;
+  }
+
+  .contactUs__details > h2 {
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+
+  .contactUs__details > p {
+    width: 250px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    display: flex;
+  }
+
+  .contactUs__form {
+    width: 100%;
+  }
+}

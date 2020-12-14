@@ -1,0 +1,98 @@
+.tournaments {
+  width: 90%;
+  max-width: 1200px;
+  min-height: 80vh;
+  height: auto;
+  background-color: white;
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 2px 4px black;
+}
+
+.tournaments__heading{
+  width: 95%;
+  margin-top: 6px;
+  text-align: center;
+  background-color: #0D59CA;
+  color: white;
+  border-radius: 6px;
+  font-weight: 700;
+}
+
+.evenColor {
+  background-color:rgb(236, 172, 236);
+}
+
+.oddColor {
+  background-color:  rgb(231, 199, 231);
+}
+
+.tournament__link > a {
+  text-decoration: none;
+  color: black;
+}
+
+.tournaments table,
+.record table {
+  width: 90%;
+  margin: 16px 0;
+}
+
+.tournaments table,
+.record table {
+  text-align: center;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  border-collapse: collapse;
+  padding: 4px;
+}
+
+.tournaments th,
+.record th {
+  text-align: center;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  border-collapse: collapse;
+  padding: 4px 4px;
+}
+
+.tournaments td,
+.record td {
+  text-align: center;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  border-collapse: collapse;
+  padding: 4px 4px;
+}
+
+.tournaments__tableHeading{
+  background-color: rgb(183, 139, 224);
+  color: rgb(47, 7, 85);
+}
+
+.tournaments tr,
+.record tr {
+  overflow-x: scroll;
+}
+
+.table__dataLeft {
+  text-align: left !important;
+}
+
+@media screen and (max-width: 600px) {
+  .tournaments {
+    width: 100%;
+    box-shadow: none;
+    margin: 10px 0;
+  }
+  table {
+    font-size: x-small;
+    width: 100%;
+  }
+
+  .mobile__view {
+    display: none;
+  }
+}

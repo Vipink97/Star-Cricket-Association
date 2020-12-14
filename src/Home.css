@@ -1,0 +1,140 @@
+.home {
+  width: 90%;
+  max-width: 1200px;
+  min-height: 70vh;
+  background-color: white;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.mySlides {
+  width: 1200px;
+  height: 600px;
+}
+
+.mySlides__caption {
+  width: auto;
+  height: 50px;
+  padding: 0 8px;
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  font-size: xx-large;
+  position: absolute;
+  top: 549px;
+  left: 0;
+}
+
+.homeHeading__upcoming{
+  width: 95%;
+  margin-top: 30px;
+  letter-spacing: 1px;
+  color: crimson;
+  border-top: 1px solid rgb(180, 180, 180);
+  border-bottom: 1px solid rgb(180, 180, 180);
+  padding-top: 3px;
+  padding-bottom: 4px;
+}
+
+.homeMatches__container {
+  width: 100%;
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.homeMatch__container {
+  width: 360px;
+  box-shadow: 0px 0px 4px black;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+
+.matchCard__heading {
+  background-color: orange;
+  text-align: right;
+  font-style: italic;
+  padding: 2px 6px;
+  color: white;
+}
+
+.matchCard__seriesName {
+  color: darkblue;
+  padding: 3px 6px;
+}
+
+.matchCard__matchCode {
+  color: brown;
+  padding: 3px 6px;
+}
+
+.homeTeamInfo__container {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 4px 6px;
+}
+
+.team__logo {
+  width: 25px;
+  height: 25px;
+  margin-left: 4px;
+}
+
+.matchCard__teamName {
+  margin-left: 8px;
+  color: darkblue;
+}
+
+.matchCard__teamScore{
+  margin-right: 6px;
+  margin-left: auto;
+  color: brown;
+}
+
+.match__result{
+color: rgb(7, 7, 163);
+margin-bottom: 8px;
+margin-left: 12px;
+}
+
+@media screen and (max-width: 600px) {
+  .home {
+    width: 100%;
+    min-height: 250px;
+    margin: 0;
+  }
+
+  .mySlides {
+    width: 100%;
+    height: 250px;
+  }
+
+  .mySlides__caption {
+    width: auto;
+    height: 25px;
+    padding: 0 6px;
+    font-weight: 400;
+    font-size: large;
+    position: absolute;
+    top: 224px;
+    left: 0;
+  }
+
+  .homeHeading__upcoming{
+    margin-top: 20px;
+    font-size: larger;
+    padding-left: 20px;
+  }
+
+  .homeMatches__container {
+    margin: 10px 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

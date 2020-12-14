@@ -1,0 +1,146 @@
+.match {
+  width: 90%;
+  max-width: 1200px;
+  min-height: 80vh;
+  background-color: white;
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 2px 4px black;
+}
+
+.tournament__code {
+  margin-top: 8px;
+}
+
+.tournament__code,
+.match__header {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(23, 71, 90);
+}
+
+.match__header {
+  width: 90%;
+  display: flex;
+  padding: 0px 0px 8px 18px;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  box-sizing: border-box;
+}
+
+.match__header > h4 {
+  margin-top: 8px;
+  margin-left: 10px;
+}
+
+.match__winner {
+  width: 90%;
+  text-align: left;
+  font-size: large;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.match__batting {
+  width: 90%;
+  text-align: center;
+  padding: 0;
+  box-sizing: border-box;
+  border-spacing: 0;
+}
+
+.match__batting > caption > span {
+  padding: 4px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  background-color: rgb(23, 71, 90);
+}
+
+.match__batting th {
+  background-color: rgb(190, 189, 189);
+  margin: 0;
+  padding: 4px;
+  font-weight: 600;
+  color: rgb(23, 71, 90);
+  width: 10%;
+}
+
+.match__batting tr > td {
+  margin: 0 2px;
+  border-bottom: 1px solid black;
+  width: 10%;
+}
+
+.match__batting > thead th:first-child,
+.match__batting > tbody td:first-child {
+  width: 50%;
+}
+
+.match__battingFooter {
+  width: 90%;
+}
+
+.match__battingFooter > span {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  padding: 4px 2px;
+}
+
+.match__bowling {
+  padding-top: 4px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .match {
+    width: 95%;
+    margin: 10px 0;
+  }
+
+  .tournament__code {
+    margin-top: 4px;
+  }
+
+  .match__header {
+    width: 96%;
+    padding: 0px 0px 2px 0px;
+    flex-direction: column;
+  }
+
+  .match__header > h1{
+    font-size: large;
+  }
+
+  .match__header > h4 {
+    width: 100%;
+    text-align: right;
+    margin-top: 0px;
+    margin-left: 0;
+    font-size: small;
+  }
+
+  .match__winner {
+    width: 95%;
+    font-weight: 300;
+    font-size: small;
+  }
+
+  .match__batting {
+    width: 95%;
+  }
+
+  .match__battingFooter {
+    width: 95%;
+  }
+  
+  .match__battingFooter > span >h4{
+    font-size: small;
+  }
+  .match__battingFooter > span:first-child h4{
+    font-weight: 400;
+  }
+}

@@ -1,0 +1,133 @@
+.ranking {
+  width: 80%;
+  height: auto;
+  margin: 20px 0;
+  padding: 10px 20px;
+  border: 1px solid rgb(168, 167, 167);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ranking__heading {
+  width: 100%;
+  margin: 10px 0;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+.ranking__heading > h1 {
+  font-size: xx-large;
+  letter-spacing: 8px;
+  padding: 1px 8px;
+  box-shadow: -1px 2px 4px black;
+  background-color: rgb(17, 43, 99);
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.ranking__container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.inner__container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 600px;
+  height: auto;
+  position: relative;
+  border: 1px solid rgb(216, 215, 215);
+  border-radius: 4px;
+  padding: 10px;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.inner__container > h2 {
+  font-family: "Courier New", Courier, monospace;
+  padding: 4px;
+  width: 100%;
+  border-bottom: 1px solid rgb(206, 204, 204);
+  text-align: center;
+  background-color:  rgb(17, 43, 99);
+  color: white;
+  border-radius: 4px;
+}
+
+.info__icon {
+  position: absolute;
+  top: 11px;
+  right: 8px;
+  color: white;
+}
+
+.battingRanking:hover + .battingRank__container,
+.bowlingRanking:hover + .bowlingRank__container,
+.teamRanking:hover + .teamRank__container {
+  display: block;
+}
+
+.battingRank__container,
+.bowlingRank__container,
+.teamRank__container {
+  background-color: rgb(247, 245, 245);
+  border: 1px solid gray;
+  padding: 10px;
+  border-radius: 5px;
+  position: absolute;
+  top: 30px;
+  right: 10px;
+  z-index: 1;
+  display: none;
+}
+
+.inner__container > table {
+  width: 100%;
+  margin: 10px 5px;
+  border-spacing: 0px;
+}
+
+.inner__container th,
+.inner__container td {
+  padding: 4px 0;
+  border-bottom: 1px solid rgb(175, 175, 175);
+  border-collapse: collapse;
+}
+
+.inner__container td {
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .ranking {
+    margin: 2px 0 10px 0;
+    padding: 0px 20px;
+  }
+
+  .ranking__heading > h1 {
+    font-size: x-large;
+    letter-spacing: 4px;
+    padding: 1px 8px;
+    text-align: center;
+  }
+
+  .ranking__heading {
+    width: 105%;
+  }
+
+  .ranking__container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .inner__container {
+    min-height: 0;
+    margin-right: 0;
+    margin: 5px 0;
+  }
+}

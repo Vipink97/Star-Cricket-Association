@@ -1,0 +1,100 @@
+.matchForm {
+  width: 90%;
+  max-width: 1200px;
+  min-height: 80vh;
+  background-color: white;
+  margin: 40px 0;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: stretch;
+  box-shadow: 0px 2px 4px black;
+}
+
+.error {
+  display: flex;
+  flex-direction: column;
+  /* height: 50px; */
+  color: red;
+}
+
+.errorInput {
+  outline-color: red;
+}
+
+.inputField {
+  min-width: 320px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.matchDetails__container,
+.teamDetails__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid black;
+}
+
+.matchDetails__innerContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 8px;
+}
+
+.teamDetails__innerContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 8px;
+}
+
+.teamDetails__innerContainer > .inputField {
+  width: 300px;
+  min-width: 300px;
+}
+
+.battingDetails__container {
+  margin: 4px;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.battingDetails__container >div {
+  margin: 0 3%;
+}
+
+.bowlingDetails__container {
+  margin: 4px;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.bowlingDetails__container >div {
+  margin: 0 3%;
+}
+
+.playersDetail__container {
+  width: 100%;
+  margin: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.playersDetails__innerContainer{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.playersDetails__innerContainer > div{
+  margin: 0 2.1%;
+}
+
+.submit__button{
+  margin: 10px 10px 10px auto;
+  
+}
